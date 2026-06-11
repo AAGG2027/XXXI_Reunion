@@ -1,0 +1,12 @@
+/aagg2027
+│── index.html
+│── about.html
+│── program.html
+│── registration.html
+│── committee.html
+│── venue.html
+│── contact.html
+│── assets/
+│    ├── css/style.css
+│    ├── img/logo.png
+│    └── pdf/programa.pdf
