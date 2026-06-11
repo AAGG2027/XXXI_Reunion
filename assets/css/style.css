@@ -1,0 +1,66 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1, header h2, header p {
+  margin: 5px 0;
+}
+
+/* Navegación */
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner de imágenes */
+.banner {
+  display: flex;
+  flex-wrap: wrap; /* permite que las fotos bajen a otra fila si no entran */
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.banner img {
+  width: 30%; /* ajusta para que entren 3 por fila */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Contenido principal */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #004080;
+}
+
+/* Pie de página */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
