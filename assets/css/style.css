@@ -40,7 +40,8 @@ nav a:hover {
 }
 
 .banner img {
-  width: 30%; /* ajusta para que entren 3 por fila */
+  width: 20%;   /* antes estaba en 30%, ahora más chico */
+  max-width: 200px; /* límite máximo en píxeles */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
