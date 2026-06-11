@@ -32,13 +32,14 @@
 
     .banner {
       display: flex;
+      flex-wrap: wrap; /* permite que las fotos bajen a otra fila si no entran */
       justify-content: center;
       gap: 10px;
       margin: 20px;
     }
 
     .banner img {
-      width: 32%;
+      width: 30%; /* ajusta para que entren 3 por fila */
       height: auto;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -66,6 +67,7 @@
   <header>
     <h1>XXXI Reunión de la AAGG</h1>
     <h2>I Encuentro Binacional con Uruguay</h2>
+    <p>14–17 de septiembre, Concordia, Entre Ríos</p>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="program.html">Programa</a>
@@ -97,39 +99,6 @@
 
   <footer>
     <p>&copy; AAGG 2027 - XXXI Reunión</p>
-  </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>XXXI Reunión de la AAGG y I Encuentro Binacional con Uruguay</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <header>
-    <h1>Congreso AAGG 2027</h1>
-    <p>14–17 de septiembre, Concordia, Entre Ríos</p>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="program.html">Programa</a>
-      <a href="registration.html">Inscripción</a>
-      <a href="committee.html">Comité</a>
-      <a href="venue.html">Sede</a>
-      <a href="contact.html">Contacto</a>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>Bienvenida</h2>
-      <p>El Congreso de la Asociación Argentina de Geofísicos y Geólogos (AAGG) se celebrará del 14 al 17 de septiembre de 2027 en Concordia. Este evento reunirá investigadores, profesionales y estudiantes para compartir avances en geociencias.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; AAGG 2027 - Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
