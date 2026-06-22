@@ -19,6 +19,19 @@
       text-align: center;
     }
 
+    /* Contenedor para logo y títulos */
+    .logo-titulo {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* centra todo horizontalmente */
+      gap: 15px; /* espacio entre logo y texto */
+    }
+
+    .logo-titulo img {
+      width: 80px; /* tamaño del logo */
+      height: auto;
+    }
+
     nav a {
       margin: 0 10px;
       color: white;
@@ -32,14 +45,14 @@
 
     .banner {
       display: flex;
-      flex-wrap: wrap; /* permite que las fotos bajen a otra fila si no entran */
+      flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
       margin: 20px;
     }
 
     .banner img {
-      width: 30%; /* ajusta para que entren 3 por fila */
+      width: 30%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -65,9 +78,14 @@
 </head>
 <body>
   <header>
-    <h1>XXXI Reunión de la AAGG</h1>
-    <h2>I Encuentro Binacional con Uruguay</h2>
-    <p>14–17 de septiembre, Concordia, Entre Ríos</p>
+    <div class="logo-titulo">
+      <img src="assets/img/logo.png" alt="Logo AAGG">
+      <div>
+        <h1>XXXI Reunión de la AAGG</h1>
+        <h2>I Encuentro Binacional con Uruguay</h2>
+        <p>14–17 de septiembre, Concordia, Entre Ríos</p>
+      </div>
+    </div>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="program.html">Programa</a>
