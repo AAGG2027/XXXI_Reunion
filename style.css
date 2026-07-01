@@ -25,3 +25,18 @@ nav a:hover {
 section {
   padding: 20px;
 }
+
+/* --- NUEVO BLOQUE PARA LOGOS EN EL FOOTER --- */
+.logos-footer {
+  display: flex;
+  justify-content: center;   /* centra los logos */
+  align-items: center;
+  gap: 20px;                 /* espacio entre logos */
+  flex-wrap: wrap;           /* permite que bajen si no entran */
+  margin-bottom: 10px;
+}
+
+.logos-footer img {
+  height: 60px;   /* altura uniforme para todos */
+  width: auto;    /* mantiene proporción */
+}
