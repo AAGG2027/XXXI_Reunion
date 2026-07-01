@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>XXXI Reunión de la AAGG y I Encuentro Binacional con Uruguay</title>
+  <title>XXXI Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     body {
@@ -16,20 +16,39 @@
       background: #004080;
       color: white;
       padding: 20px;
+      position: relative; /* permite posicionar elementos dentro */
+    }
+
+    /* Logo fijo arriba a la izquierda */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .logo img {
+      width: 80px;
+      height: auto;
+    }
+
+    /* Bloque de título centrado */
+    .titulo {
       text-align: center;
     }
 
-    /* Contenedor para logo y títulos */
-.logo-titulo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* lo alinea a la izquierda */
-  gap: 15px;
-}
+    .titulo h1 {
+      margin: 0;
+      font-size: 1.6em;
+    }
 
-    .logo-titulo img {
-      width: 80px; /* tamaño del logo */
-      height: auto;
+    .titulo p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+    }
+
+    nav {
+      margin-top: 15px;
+      text-align: center;
     }
 
     nav a {
@@ -78,13 +97,12 @@
 </head>
 <body>
   <header>
-    <div class="logo-titulo">
+    <div class="logo">
       <img src="assets/img/logo.png" alt="Logo AAGG">
-      <div>
-        <h1>XXXI Reunión de la AAGG</h1>
-        <h2>I Encuentro Binacional con Uruguay</h2>
-        <p>14–17 de septiembre, Concordia, Entre Ríos</p>
-      </div>
+    </div>
+    <div class="titulo">
+      <h1>XXXI Reunión de la Asociación Argentina de Geofísicos y Geodestas</h1>
+      <p>14–17 de septiembre, Concordia, Entre Ríos</p>
     </div>
     <nav>
       <a href="index.html">Inicio</a>
@@ -109,12 +127,26 @@
     <h2>Bienvenidos</h2>
     <p>
       La XXXI Reunión de la Asociación Argentina de Geofísicos y Geodestas (AAGG) 
-      junto al I Encuentro Binacional con Uruguay se celebrará en 2027. 
-      Este evento reúne a investigadores, profesionales y estudiantes para compartir 
-      avances en disciplinas relacionadas con las Ciencias de la Tierra, del agua y de la atmósfera, geodesia, hidrogeología y disciplinas afines.
+      se celebrará en 2027. 
+      Este evento reúne a científicos, profesionales, tecnólogos y estudiantes avanzados de grado y posgrado para compartir 
+      avances en disciplinas afines a las áreas temáticas que se proponen.
     </p>
   </main>
 
+  <main>
+    <h2>Áreas Temáticas</h2>
+    <p>
+    1. Geofísica Aplicada<br>
+    2. Procesos y recursos hídricos en el Sistema Tierra<br>
+    3. Ciencias de la Atmósfera y los Océanos<br>
+    4. Geodesia moderna y observación del Sistema Tierra<br>
+    5. Sismología, Física del Interior Terrestre y Vulcanología<br>
+    6. Geomagnetismo y Aeronomía<br>
+    7. Geomática, cartografía matemática y sensores remotos<br>
+    8. Comunicación pública de la ciencia / Extensión Universitaria
+    </p>
+  </main>
+  
   <footer>
     <p>&copy; AAGG 2027 - XXXI Reunión</p>
   </footer>
