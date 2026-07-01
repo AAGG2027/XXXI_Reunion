@@ -26,7 +26,7 @@ section {
   padding: 20px;
 }
 
-/* --- NUEVO BLOQUE PARA LOGOS EN EL FOOTER --- */
+/* Bloque de logos en el footer */
 .logos-footer {
   display: flex;
   justify-content: center;   /* centra los logos */
@@ -37,7 +37,6 @@ section {
 }
 
 .logos-footer img {
-  height: 20px;      /* más chicos que antes */
-  max-width: 120px;  /* límite de ancho */
+  height: 10px;      /* altura uniforme más pequeña */
+  max-width: 120px;  /* límite de ancho para logos horizontales */
   width: auto;       /* mantiene proporción */
-}
