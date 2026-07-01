@@ -77,6 +77,6 @@ footer {
 
 .logos-footer img {
   height: 60px;      /* altura uniforme más pequeña */
-  max-width: 120px;  /* límite de ancho para logos horizontales */
+  max-width: 200px;  /* límite de ancho para logos horizontales */
   width: auto;       /* mantiene proporción */
 }
