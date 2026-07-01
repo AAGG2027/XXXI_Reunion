@@ -37,6 +37,6 @@ section {
 }
 
 .logos-footer img {
-  height: 60px;   /* altura uniforme para todos */
+  height: 20px;   /* altura uniforme para todos */
   width: auto;    /* mantiene proporción */
 }
