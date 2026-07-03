@@ -11,12 +11,21 @@ header {
   background: #004080;
   color: white;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centra todo horizontalmente */
+}
+
+header img {
+  height: 100px;   /* ajustá según lo que quieras */
+  width: auto;     /* mantiene proporción */
+  margin-right: 20px;
 }
 
 header h1, header h2, header p {
   margin: 5px 0;
 }
+
 
 /* Navegación */
 nav a {
