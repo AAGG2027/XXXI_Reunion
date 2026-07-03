@@ -2,9 +2,8 @@
 header {
   background: #004080;
   color: white;
-  min-height: 160px;   /* más alto para dar espacio */
+  padding: 20px;
   position: relative;
-  padding-top: 20px;
   text-align: center;
 }
 
