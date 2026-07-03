@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main"]   # ajustá si usás otra rama
 
 permissions:
   contents: read
@@ -24,6 +24,8 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages   # 👈 este bloque es obligatorio
     steps:
       - name: Deploy to GitHub Pages
         id: deploy
