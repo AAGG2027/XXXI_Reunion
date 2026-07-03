@@ -5,8 +5,7 @@ header {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo a la izquierda, texto + menú a la derecha */
-  flex-wrap: wrap;
+  justify-content: space-between; /* logo a la izquierda, resto a la derecha */
 }
 
 header .logo img {
@@ -14,13 +13,13 @@ header .logo img {
   width: auto;
 }
 
-.header-text {
-  text-align: center;
+.header-content {
   flex: 1;
+  text-align: center;
 }
 
-.header-text h1,
-.header-text p {
+.header-content h1,
+.header-content p {
   margin: 5px 0;
 }
 
@@ -39,5 +38,3 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
-
-
