@@ -13,10 +13,11 @@ header {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo a la izquierda, títulos a la derecha */
+  justify-content: center;   /* centra logo + texto */
+  flex-wrap: wrap;           /* permite que baje en pantallas chicas */
 }
 
-header img {
+header .logo img {
   height: 120px;   /* aumentá según lo que quieras */
   width: auto;
   margin-right: 20px;
@@ -24,7 +25,7 @@ header img {
 
 .header-text {
   text-align: center;
-  flex: 1; /* ocupa el espacio restante */
+  max-width: 800px;
 }
 
 .header-text h1,
@@ -33,8 +34,13 @@ header img {
   margin: 5px 0;
 }
 
-
 /* Navegación */
+nav {
+  background: #004080;
+  text-align: center;
+  padding: 10px 0;
+}
+
 nav a {
   margin: 0 10px;
   color: white;
@@ -49,15 +55,15 @@ nav a:hover {
 /* Banner de imágenes */
 .banner {
   display: flex;
-  flex-wrap: wrap; /* permite que las fotos bajen a otra fila si no entran */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   margin: 20px;
 }
 
 .banner img {
-  width: 20%;   /* antes estaba en 30%, ahora más chico */
-  max-width: 200px; /* límite máximo en píxeles */
+  width: 20%;
+  max-width: 200px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -81,18 +87,20 @@ footer {
   padding: 10px;
   margin-top: 30px;
 }
+
 /* Bloque de logos en el footer */
 .logos-footer {
   display: flex;
-  justify-content: center;   /* centra los logos */
+  justify-content: center;
   align-items: center;
-  gap: 20px;                 /* espacio entre logos */
-  flex-wrap: wrap;           /* permite que bajen si no entran */
+  gap: 20px;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
 .logos-footer img {
-  height: 60px;      /* altura uniforme más pequeña */
-  max-width: 200px;  /* límite de ancho para logos horizontales */
-  width: auto;       /* mantiene proporción */
+  height: 60px;
+  max-width: 200px;
+  width: auto;
 }
+
