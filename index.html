@@ -12,28 +12,25 @@
       color: #333;
     }
 
+    /* Encabezado */
     header {
       background: #004080;
       color: white;
-      min-height: 120px;
-      text-align: center;
-      position: relative;
-    }
-    /* Logo fijo arriba a la izquierda */
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* logo a la izquierda, resto a la derecha */
+      flex-wrap: wrap;
     }
 
     .logo img {
-      width: 80px;
-      height: auto;
+      height: 140px;   /* aumentá según lo que quieras */
+      width: auto;
     }
 
-    /* Bloque de título centrado */
     .titulo {
       text-align: center;
+      flex: 1;
     }
 
     .titulo h1 {
@@ -47,8 +44,7 @@
     }
 
     nav {
-      margin-top: 15px;
-      text-align: center;
+      margin-top: 10px;
     }
 
     nav a {
@@ -62,6 +58,7 @@
       text-decoration: underline;
     }
 
+    /* Banner de imágenes */
     .banner {
       display: flex;
       flex-wrap: wrap;
@@ -93,29 +90,42 @@
       padding: 10px;
       margin-top: 30px;
     }
+
+    .logos-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .logos-footer img {
+      height: 60px;
+      max-width: 200px;
+      width: auto;
+    }
   </style>
 </head>
 <body>
-<header>
-  <div class="logo">
-    <img src="assets/img/logo.png" alt="Logo AAGG">
-  </div>
-  <div class="titulo">
-    <h1>XXXI Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas</h1>
-    <p>14–17 de septiembre, Concordia, Entre Ríos, Argentina.</p>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="program.html">Programa</a>
-      <a href="registration.html">Inscripción</a>
-      <a href="committee.html">Comité Científico</a>
-      <a href="committee-org.html">Comité Organizador</a>
-      <a href="venue.html">Sede</a>
-      <a href="contact.html">Contacto</a>
-    </nav>
-  </div>
-</header>
-
-
+  <header>
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Logo AAGG">
+    </div>
+    <div class="titulo">
+      <h1>XXXI Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas</h1>
+      <p>14–17 de septiembre, Concordia, Entre Ríos, Argentina.</p>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="program.html">Programa</a>
+        <a href="registration.html">Inscripción</a>
+        <a href="committee.html">Comité Científico</a>
+        <a href="committee-org.html">Comité Organizador</a>
+        <a href="venue.html">Sede</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Bloque de imágenes de inicio -->
   <div class="banner">
@@ -130,7 +140,7 @@
     <h2>Bienvenidos</h2>
     <p>
       La XXXI Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas (AAGG) 
-      se celebrará del 14 al 17 de septiembre de 2027 en la cuidad de Concordia, Entre Ríos, Argentina. 
+      se celebrará del 14 al 17 de septiembre de 2027 en la ciudad de Concordia, Entre Ríos, Argentina. 
       Este evento reúne a científicos, profesionales, tecnólogos y estudiantes avanzados de grado y posgrado para compartir 
       avances en disciplinas afines a las áreas temáticas que se proponen.
     </p>
