@@ -1,11 +1,3 @@
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f9f9f9;
-  color: #333;
-}
-
 /* Encabezado */
 header {
   background: #004080;
@@ -13,94 +5,39 @@ header {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;   /* centra logo + texto */
-  flex-wrap: wrap;           /* permite que baje en pantallas chicas */
+  justify-content: space-between; /* logo a la izquierda, texto + menú a la derecha */
+  flex-wrap: wrap;
 }
 
 header .logo img {
-  height: 120px;   /* aumentá según lo que quieras */
+  height: 140px;   /* aumentá según lo que quieras */
   width: auto;
-  margin-right: 20px;
 }
 
 .header-text {
   text-align: center;
-  max-width: 800px;
+  flex: 1;
 }
 
 .header-text h1,
-.header-text h2,
 .header-text p {
   margin: 5px 0;
 }
 
-/* Navegación */
-nav {
-  background: #004080;
-  text-align: center;
-  padding: 10px 0;
+/* Navegación dentro del header */
+header nav {
+  margin-top: 10px;
 }
 
-nav a {
+header nav a {
   margin: 0 10px;
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 
-/* Banner de imágenes */
-.banner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px;
-}
-
-.banner img {
-  width: 20%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-/* Contenido principal */
-main {
-  padding: 20px;
-  text-align: center;
-}
-
-h2 {
-  color: #004080;
-}
-
-/* Pie de página */
-footer {
-  background: #004080;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 30px;
-}
-
-/* Bloque de logos en el footer */
-.logos-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
-.logos-footer img {
-  height: 60px;
-  max-width: 200px;
-  width: auto;
-}
 
