@@ -1,39 +1,45 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
 /* Encabezado */
 header {
   background: #004080;
   color: white;
   padding: 20px;
-  position: relative;
-  text-align: center;
-}
-
-/* Logo fijo arriba a la izquierda */
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo a la izquierda, resto a la derecha */
+  flex-wrap: wrap;
 }
 
 .logo img {
-  height: 100px;   /* aumentá según lo que quieras */
+  height: 100px;   /* ajustá según lo que quieras */
   width: auto;
 }
 
-/* Bloque de título centrado */
 .titulo {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+  flex: 1;
 }
 
-.titulo h1,
+.titulo h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
 .titulo p {
-  margin: 5px 0;
+  margin: 5px 0 0;
+  font-size: 1.1em;
 }
 
 /* Navegación dentro del header */
 nav {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 nav a {
@@ -45,5 +51,57 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+/* Banner de imágenes */
+.banner {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+  flex-wrap: nowrap;   /* mantiene las 5 juntas en una fila */
+}
+
+.banner img {
+  flex: 1;             /* todas ocupan espacio proporcional */
+  max-width: 180px;    /* límite máximo en píxeles */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Contenido principal */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #004080;
+}
+
+/* Pie de página */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Bloque de logos en el footer */
+.logos-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.logos-footer img {
+  height: 60px;
+  max-width: 200px;
+  width: auto;
 }
 
