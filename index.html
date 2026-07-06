@@ -168,7 +168,38 @@
       <img src="assets/img/logocenurudelar.png" alt="Logo CENUR UDELAR">
     </div>
     <p>&copy; AAGG 2027 - XXXI Reunión</p>
-    <img src="https://img.shields.io/badge/visitas-1-79C83D?style=flat&labelColor=555555" alt="Contador de visitas">
+    <div style="margin-top: 15px;">
+  <img id="badge-contador" src="https://img.shields.io/badge/visitas-cargando-555555" alt="Contador de visitas">
+</div>
+
+<script>
+  const nombreID = 'aagg2027_reunion31_final';
+  const imgContador = document.getElementById('badge-contador');
+
+  // 1. Si el usuario NO ha entrado hoy, sumamos 1 usando la API estable de 'moe-counter'
+  if (!localStorage.getItem('visitado_aagg')) {
+    fetch(`https://api.moe-counter.ru/hit/${nombreID}`)
+      .then(res => res.json())
+      .then(data => {
+        // Actualizamos la imagen de Shields.io con el número real obtenido
+        imgContador.src = `https://img.shields.io/badge/visitas-${data.value}-79C83D?style=flat&labelColor=555555`;
+        localStorage.setItem('visitado_aagg', 'true'); // Bloqueamos para que no vuelva a sumar
+      })
+      .catch(() => {
+        imgContador.src = "https://img.shields.io/badge/visitas-1-79C83D?style=flat&labelColor=555555";
+      });
+  } else {
+    // 2. Si YA entró antes, solo leemos el valor actual SIN SUMAR nada
+    fetch(`https://api.moe-counter.ru/get/${nombreID}`)
+      .then(res => res.json())
+      .then(data => {
+        imgContador.src = `https://img.shields.io/badge/visitas-${data.value}-79C83D?style=flat&labelColor=555555`;
+      })
+      .catch(() => {
+        imgContador.src = "https://img.shields.io/badge/visitas--555555";
+      });
+  }
+</script>
   </footer>
 </body>
 </html>
