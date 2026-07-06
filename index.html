@@ -168,36 +168,19 @@
       <img src="assets/img/logocenurudelar.png" alt="Logo CENUR UDELAR">
     </div>
     <p>&copy; AAGG 2027 - XXXI Reunión</p>
-    <div style="margin-top: 15px;">
-  <img id="badge-contador" src="https://img.shields.io/badge/visitas-cargando-555555" alt="Contador de visitas">
+<div style="margin-top: 15px;">
+  <img id="badge-contador" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://aagg2027.github.io/XXXI_Reunion/&count_bg=%2379C83D&title_bg=%23555555&title=visitas" alt="Contador de visitas">
 </div>
 
 <script>
-  const nombreID = 'aagg2027_reunion31_final';
-  const imgContador = document.getElementById('badge-contador');
-
-  // 1. Si el usuario NO ha entrado hoy, sumamos 1 usando la API estable de 'moe-counter'
-  if (!localStorage.getItem('visitado_aagg')) {
-    fetch(`https://api.moe-counter.ru/hit/${nombreID}`)
-      .then(res => res.json())
-      .then(data => {
-        // Actualizamos la imagen de Shields.io con el número real obtenido
-        imgContador.src = `https://img.shields.io/badge/visitas-${data.value}-79C83D?style=flat&labelColor=555555`;
-        localStorage.setItem('visitado_aagg', 'true'); // Bloqueamos para que no vuelva a sumar
-      })
-      .catch(() => {
-        imgContador.src = "https://img.shields.io/badge/visitas-1-79C83D?style=flat&labelColor=555555";
-      });
+  // Control con LocalStorage para cumplir tu requisito de NO sumar si es el mismo dispositivo
+  const img = document.getElementById('badge-contador');
+  if (localStorage.getItem('ya_visito_aagg_2027')) {
+    // Si ya visitó, cambiamos el enlace al comando "view" (solo ver) en lugar de "incr" (incrementar)
+    img.src = "https://hits.seeyoufarm.com/api/count/view/badge.svg?url=https://aagg2027.github.io/XXXI_Reunion/&count_bg=%2379C83D&title_bg=%23555555&title=visitas";
   } else {
-    // 2. Si YA entró antes, solo leemos el valor actual SIN SUMAR nada
-    fetch(`https://api.moe-counter.ru/get/${nombreID}`)
-      .then(res => res.json())
-      .then(data => {
-        imgContador.src = `https://img.shields.io/badge/visitas-${data.value}-79C83D?style=flat&labelColor=555555`;
-      })
-      .catch(() => {
-        imgContador.src = "https://img.shields.io/badge/visitas--555555";
-      });
+    // Si es nuevo, dejamos que cargue el "incr" original y lo marcamos como visitado
+    localStorage.setItem('ya_visito_aagg_2027', 'true');
   }
 </script>
   </footer>
