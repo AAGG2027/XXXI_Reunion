@@ -2,171 +2,50 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XXXI Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-
-    /* Encabezado */
-    header {
-      background: #004080;
-      color: white;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between; /* logo a la izquierda, resto a la derecha */
-      flex-wrap: wrap;
-    }
-
-    .logo img {
-      height: 100px;   /* aumentá según lo que quieras */
-      width: auto;
-    }
-
-    .titulo {
-      text-align: center;
-      flex: 1;
-    }
-
-    .titulo h1 {
-      margin: 0;
-      font-size: 1.6em;
-    }
-
-    .titulo p {
-      margin: 5px 0 0;
-      font-size: 1.1em;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      margin: 0 10px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Banner de imágenes */
-    .banner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin: 20px;
-    }
-
-    .banner img {
-      width: 30%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    main {
-      padding: 20px;
-      text-align: center;
-    }
-
-    h2 {
-      color: #004080;
-    }
-
-    /* Sección de Auspiciantes (Cuerpo) */
-    .seccion-auspiciantes {
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
-
-    .logos-auspiciantes {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .logos-auspiciantes img {
-      height: 70px; /* Un poco más grandes que los del footer por jerarquía */
-      max-width: 220px;
-      width: auto;
-      filter: grayscale(20%); /* Opcional: suaviza los colores para que combinen */
-      transition: transform 0.2s;
-    }
-
-    .logos-auspiciantes img:hover {
-      transform: scale(1.05); /* Efecto visual sutil al pasar el mouse */
-    }
-
-    /* Footer */
-    footer {
-      background: #004080;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 40px;
-    }
-
-    .logos-footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 10px;
-    }
-
-    .logos-footer img {
-      height: 60px;
-      max-width: 200px;
-      width: auto;
-    }
-  </style>
 </head>
 <body>
+  
+  <!-- Encabezado con imagen de fondo (Hero Header) -->
   <header>
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="Logo AAGG">
-    </div>
-    <div class="titulo">
-      <h1>XXXI Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas</h1>
-      <p>14–17 de septiembre, Concordia, Entre Ríos, Argentina.</p>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="program.html">Programa</a>
-        <a href="registration.html">Inscripción</a>
-        <a href="committee.html">Comité Científico</a>
-        <a href="committee-org.html">Comité Organizador</a>
-        <a href="venue.html">Sede</a>
-        <a href="contact.html">Contacto</a>
-      </nav>
+    <div class="header-container">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo AAGG">
+      </div>
+      <div class="titulo">
+        <h1>XXXI Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas</h1>
+        <p class="subtitulo">14–17 de septiembre, Concordia, Entre Ríos, Argentina</p>
+        <nav>
+          <a href="index.html" class="active">Inicio</a>
+          <a href="program.html">Programa</a>
+          <a href="registration.html">Inscripción</a>
+          <a href="committee.html">Comité Científico</a>
+          <a href="committee-org.html">Comité Organizador</a>
+          <a href="venue.html">Sede</a>
+          <a href="contact.html">Contacto</a>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <div class="banner">
-    <img src="assets/img/foto4.jpg" alt="Imagen 1 - Congreso">
-    <img src="assets/img/foto2.jpg" alt="Imagen 2 - Actividad científica">
-    <img src="assets/img/foto1.jpg" alt="Imagen 3 - Encuentro binacional">
-    <img src="assets/img/foto3.jpg" alt="Imagen 4 - Encuentro binacional">
-    <img src="assets/img/foto5.jpg" alt="Imagen 5 - Encuentro binacional">
+  <!-- Banner de Galería -->
+  <div class="banner-wrapper">
+    <div class="banner">
+      <div class="banner-item"><img src="assets/img/foto4.jpg" alt="Imagen 1 - Congreso"></div>
+      <div class="banner-item"><img src="assets/img/foto2.jpg" alt="Imagen 2 - Actividad científica"></div>
+      <div class="banner-item"><img src="assets/img/foto1.jpg" alt="Imagen 3 - Encuentro binacional"></div>
+      <div class="banner-item"><img src="assets/img/foto3.jpg" alt="Imagen 4 - Encuentro binacional"></div>
+      <div class="banner-item"><img src="assets/img/foto5.jpg" alt="Imagen 5 - Encuentro binacional"></div>
+    </div>
   </div>
 
   <main>
-    <section>
+    <!-- Sección Bienvenida -->
+    <section class="card-section">
       <h2>Bienvenidos</h2>
-      <p>
+      <p class="intro-text">
         La XXXI Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas (<a href="https://aagg.org.ar/" target="_blank">AAGG</a>)  
         se celebrará del 14 al 17 de septiembre de 2027 en la ciudad de Concordia, Entre Ríos, Argentina. 
         Este evento reúne a científicos, profesionales, tecnólogos y estudiantes avanzados de grado y posgrado para compartir 
@@ -174,87 +53,77 @@
       </p>
     </section>
 
-    <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
-
-    <section>
+    <!-- Sección Áreas Temáticas (Grid de Tarjetas) -->
+    <section class="card-section">
       <h2>Áreas Temáticas</h2>
-      <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto; text-align: left; line-height: 2em;">
-        <li>1. <a href="areas/geofisica-aplicada.html" style="color: #004080; text-decoration: none; font-weight: bold;">Geofísica Aplicada</a></li>
-        <li>2. <a href="areas/recursos-hidricos.html" style="color: #004080; text-decoration: none; font-weight: bold;">Procesos y recursos hídricos en el Sistema Tierra</a></li>
-        <li>3. <a href="areas/atmosfera-oceanos.html" style="color: #004080; text-decoration: none; font-weight: bold;">Ciencias de la Atmósfera y los Océanos</a></li>
-        <li>4. <a href="areas/geodesia-moderna.html" style="color: #004080; text-decoration: none; font-weight: bold;">Geodesia moderna y observación del Sistema Tierra</a></li>
-        <li>5. <a href="areas/sismologia.html" style="color: #004080; text-decoration: none; font-weight: bold;">Sismología, Física del Interior Terrestre y Vulcanología</a></li>
-        <li>6. <a href="areas/geomagnetismo.html" style="color: #004080; text-decoration: none; font-weight: bold;">Geomagnetismo y Aeronomía</a></li>
-        <li>7. <a href="areas/geomatica.html" style="color: #004080; text-decoration: none; font-weight: bold;">Geomática, cartografía matemática y sensores remotos</a></li>
-        <li>8. <a href="areas/comunicacion-extension.html" style="color: #004080; text-decoration: none; font-weight: bold;">Comunicación pública de la ciencia / Extensión Universitaria</a></li>
-      </ul>
+      <div class="areas-grid">
+        <a href="areas/geofisica-aplicada.html" class="area-card">
+          <span class="num">01</span>
+          <h3>Geofísica Aplicada</h3>
+        </a>
+        <a href="areas/recursos-hidricos.html" class="area-card">
+          <span class="num">02</span>
+          <h3>Procesos y recursos hídricos en el Sistema Tierra</h3>
+        </a>
+        <a href="areas/atmosfera-oceanos.html" class="area-card">
+          <span class="num">03</span>
+          <h3>Ciencias de la Atmósfera y los Océanos</h3>
+        </a>
+        <a href="areas/geodesia-moderna.html" class="area-card">
+          <span class="num">04</span>
+          <h3>Geodesia moderna y observación del Sistema Tierra</h3>
+        </a>
+        <a href="areas/sismologia.html" class="area-card">
+          <span class="num">05</span>
+          <h3>Sismología, Física del Interior Terrestre y Vulcanología</h3>
+        </a>
+        <a href="areas/geomagnetismo.html" class="area-card">
+          <span class="num">06</span>
+          <h3>Geomagnetismo y Aeronomía</h3>
+        </a>
+        <a href="areas/geomatica.html" class="area-card">
+          <span class="num">07</span>
+          <h3>Geomática, cartografía matemática y sensores remotos</h3>
+        </a>
+        <a href="areas/comunicacion-extension.html" class="area-card">
+          <span class="num">08</span>
+          <h3>Comunicación pública de la ciencia / Extensión Universitaria</h3>
+        </a>
+      </div>
     </section>
 
-    <section class="seccion-auspiciantes">
+    <!-- Sección Auspiciantes -->
+    <section class="card-section seccion-auspiciantes">
       <h2>Auspician este evento</h2>
       <div class="logos-auspiciantes">
-        <a href="https://www.ign.gob.ar/" target="_blank">
-          <img src="assets/img/ausp1.png" alt="Auspiciante 1">
-        </a>
-        <a href="https://www.aggo-conicet.gob.ar/observ.php" target="_blank">
-          <img src="assets/img/ausp2.png" alt="Auspiciante 2">
-        </a>
-        <a href="https://www.fcaglp.unlp.edu.ar/" target="_blank">
-          <img src="assets/img/ausp3.png" alt="Auspiciante 3">
-        </a>
-        <a href="https://ianigla.conicet.gov.ar/" target="_blank">
-          <img src="assets/img/ausp4.png" alt="Auspiciante 4">
-        </a>
-        <a href="https://www.frcon.utn.edu.ar/" target="_blank">
-          <img src="assets/img/ausp5.png" alt="Auspiciante 5">
-        </a>
-        <a href="https://www.fi.uba.ar/institucional/institutos-centros-y-escuelas/instituto-de-geodesia-y-geofisica-aplicadas-ing-eduardo-e-baglietto" target="_blank">
-          <img src="assets/img/ausp6.png" alt="Auspiciante 6">
-        </a>
-        <a href="https://igsv.unsj.edu.ar/" target="_blank">
-          <img src="assets/img/ausp7.png" alt="Auspiciante 7">
-        </a>
-        <a href="https://www.facet.unt.edu.ar/labatmosfera/" target="_blank">
-          <img src="assets/img/ausp8.png" alt="Auspiciante 8">
-        </a>
-        <a href="https://www.cenamet.org.ar/" target="_blank">
-          <img src="assets/img/ausp9.png" alt="Auspiciante 9">
-        </a>
-        <a href="https://untsegsc.wixsite.com/home" target="_blank">
-          <img src="assets/img/ausp10.png" alt="Auspiciante 10">
-        </a>
-        <a href="https://www.fcaglp.unlp.edu.ar/index.php/alumnos/eage-capitulo-estudiantil/" target="_blank">
-          <img src="assets/img/ausp11.png" alt="Auspiciante 11">
-        </a>
-        <a href="https://unlp.edu.ar/udeinvestigacion/cig-centro-de-investigaciones-geologicas/" target="_blank">
-          <img src="assets/img/ausp12.png" alt="Auspiciante 12">
-        </a>
-        <a href="https://www.fisica.uns.edu.ar/" target="_blank">
-          <img src="assets/img/ausp13.png" alt="Auspiciante 13">
-        </a>
-        <a href="https://www.iafe.uba.ar/" target="_blank">
-          <img src="assets/img/ausp14.png" alt="Auspiciante 14">
-        </a>
-        </div>
+        <a href="https://www.ign.gob.ar/" target="_blank"><img src="assets/img/ausp1.png" alt="Auspiciante 1"></a>
+        <a href="https://www.aggo-conicet.gob.ar/observ.php" target="_blank"><img src="assets/img/ausp2.png" alt="Auspiciante 2"></a>
+        <a href="https://www.fcaglp.unlp.edu.ar/" target="_blank"><img src="assets/img/ausp3.png" alt="Auspiciante 3"></a>
+        <a href="https://ianigla.conicet.gov.ar/" target="_blank"><img src="assets/img/ausp4.png" alt="Auspiciante 4"></a>
+        <a href="https://www.frcon.utn.edu.ar/" target="_blank"><img src="assets/img/ausp5.png" alt="Auspiciante 5"></a>
+        <a href="https://www.fi.uba.ar/institucional/institutos-centros-y-escuelas/instituto-de-geodesia-y-geofisica-aplicadas-ing-eduardo-e-baglietto" target="_blank"><img src="assets/img/ausp6.png" alt="Auspiciante 6"></a>
+        <a href="https://igsv.unsj.edu.ar/" target="_blank"><img src="assets/img/ausp7.png" alt="Auspiciante 7"></a>
+        <a href="https://www.facet.unt.edu.ar/labatmosfera/" target="_blank"><img src="assets/img/ausp8.png" alt="Auspiciante 8"></a>
+        <a href="https://www.cenamet.org.ar/" target="_blank"><img src="assets/img/ausp9.png" alt="Auspiciante 9"></a>
+        <a href="https://untsegsc.wixsite.com/home" target="_blank"><img src="assets/img/ausp10.png" alt="Auspiciante 10"></a>
+        <a href="https://www.fcaglp.unlp.edu.ar/index.php/alumnos/eage-capitulo-estudiantil/" target="_blank"><img src="assets/img/ausp11.png" alt="Auspiciante 11"></a>
+        <a href="https://unlp.edu.ar/udeinvestigacion/cig-centro-de-investigaciones-geologicas/" target="_blank"><img src="assets/img/ausp12.png" alt="Auspiciante 12"></a>
+        <a href="https://www.fisica.uns.edu.ar/" target="_blank"><img src="assets/img/ausp13.png" alt="Auspiciante 13"></a>
+        <a href="https://www.iafe.uba.ar/" target="_blank"><img src="assets/img/ausp14.png" alt="Auspiciante 14"></a>
+        <a href="https://ceide.unlp.edu.ar/" target="_blank"><img src="assets/img/ausp15.jpg" alt="Auspiciante 15"></a>
+        <a href="https://igeba.gl.fcen.uba.ar/" target="_blank"><img src="assets/img/ausp16.png" alt="Auspiciante 16"></a>
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="logos-footer">
-      <a href="https://aagg.org.ar/" target="_blank">
-        <img src="assets/img/Asociacion-Argentina.png" alt="Asociacion-Argentina">
-      </a>
-      <a href="https://www.fcal.uner.edu.ar" target="_blank">
-        <img src="assets/img/logoUNER2.png" alt="Logo UNER">
-      </a>
-      <a href="https://agua.unorte.edu.uy" target="_blank">
-        <img src="assets/img/logoDA.jpg" alt="Logo DA">
-      </a>
-      <a href="https://www.litoralnorte.udelar.edu.uy" target="_blank">
-       <img src="assets/img/logocenurudelar.png" alt="Logo CENUR UDELAR">
-      </a>
+      <a href="https://aagg.org.ar/" target="_blank"><img src="assets/img/Asociacion-Argentina.png" alt="Asociacion-Argentina"></a>
+      <a href="https://www.fcal.uner.edu.ar" target="_blank"><img src="assets/img/logoUNER2.png" alt="Logo UNER"></a>
+      <a href="https://agua.unorte.edu.uy" target="_blank"><img src="assets/img/logoDA.jpg" alt="Logo DA"></a>
+      <a href="https://www.litoralnorte.udelar.edu.uy" target="_blank"><img src="assets/img/logocenurudelar.png" alt="Logo CENUR UDELAR"></a>
     </div>
-    <p>&copy; AAGG 2027 - XXXI Reunión</p>
+    <p>&copy; AAGG 2027 - XXXI Reunión Científica</p>
     <div style="margin-top: 15px;">
       <img id="badge-contador" src="https://img.shields.io/badge/visitas-1-79C83D?style=flat&labelColor=555555" alt="Contador de visitas">
     </div>
@@ -274,5 +143,6 @@
       })();
     </script>
   </footer>
+
 </body>
 </html>
