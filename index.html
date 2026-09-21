@@ -113,11 +113,6 @@
       background: #1a365d !important;
     }
 
-    /* Ocultar navegación en caso de pocos elementos */
-    .hide-nav {
-      display: none !important;
-    }
-
     .modal-disertante {
       display: none; 
       position: fixed;
@@ -192,7 +187,7 @@
       max-height: 100%;
       width: auto;
       height: auto;
-      object-fit: contain; /* Foto completa sin recortar en el modal */
+      object-fit: contain;
       border-radius: 6px;
     }
 
@@ -288,7 +283,7 @@
     <section class="card-section">
       <h2>Bienvenidos</h2>
       <p class="intro-text">
-        La XXXI Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas (<a href="https://aagg.org.ar/" target="_blank">AAGG</a>)  
+        La XXXI Reunión Científica de la Asociación Argentina de Geofísicos y Geodestas (<a href="https://aagg.org.ar/" target="_blank">AAGG</a>) 
         se celebrará del 14 al 17 de septiembre de 2027 en la ciudad de Concordia, Entre Ríos, Argentina. 
         Este evento reúne a científicos, profesionales, tecnólogos y estudiantes avanzados de grado y posgrado para compartir 
         avances en disciplinas afines a las áreas temáticas que se proponen.
@@ -334,7 +329,7 @@
       </div>
     </section>
 
-    <!-- 3. Sección Disertantes Plenarios (Carrusel Adaptable) -->
+    <!-- 3. Sección Disertantes Plenarios -->
     <section class="card-section seccion-disertantes">
       <h2>Disertantes Plenarios</h2>
       
@@ -379,7 +374,25 @@
               </div>
             </div>
           </div>
-          
+
+          <!-- ================================================================= -->
+          <!-- PLANTILLA: COPIAR Y PEGAR ESTE BLOQUE PARA AGREGAR NUEVO DISERTANTE -->
+          <!-- Recordar actualizar el ID del modal (ej. modal-disertante-4) y los datos -->
+          <!-- 
+          <div class="swiper-slide">
+            <div class="card-disertante" onclick="abrirModal('modal-disertante-4')">
+              <div class="img-disertante-container">
+                <img src="assets/img/disertantes/disertante4.jpg" alt="Nombre del Disertante">
+              </div>
+              <div class="info-disertante-card">
+                <h3>Título y Nombre</h3>
+                <p class="filiacion">Institución (País)</p>
+              </div>
+            </div>
+          </div>
+          -->
+          <!-- ================================================================= -->
+
         </div>
 
         <!-- Controles de navegación y paginación -->
@@ -432,7 +445,7 @@
             <p class="modal-filiacion"><strong>Filiación:</strong> Universidad Nacional Autónoma de México (UNAM)</p>
             <hr>
             <h4>Resumen Curricular</h4>
-            <p>Investigador del Instituto de Geociencias de la Universidad Nacional Autónoma de México, UNAM, Campus Juriquilla. Es ingeniero civil, con especialización en ingeniería hidráulica y ambiental por la Universidad de la República, Uruguay, y obtuvo los grados de maestría y doctorado en ciencias de la Tierra por la UNAM, con especialidad en exploración geofísica. Actualmente es miembro del Sistema Nacional de Investigadoras e Investigadores de México. Su trabajo se centra en la exploración geofísica del subsuelo, con especial énfasis en los métodos eléctricos y electromagnéticos. A lo largo de su trayectoria ha aplicado estas herramientas al estudio de aguas subterráneas, sistemas geotérmicos, recursos energéticos y estructuras profundas de la corteza terrestre, participando y dirigiendo proyectos de investigación y estudios geofísicos en México y otros países. Su actividad académica incluye publicaciones en revistas científicas internacionales, participación en congresos y proyectos de colaboración con instituciones nacionales y extranjeras, así como la formación de estudiantes de licenciatura, maestría y doctorado. Actualmente desarrolla actividades de investigación y docencia en la UNAM, donde imparte cursos de exploración geofísica y geofísica aplicada a la geotermia.</p>
+            <p>Investigador del Instituto de Geociencias de la Universidad Nacional Autónoma de México, UNAM, Campus Juriquilla...</p>
             <h4>Conferencia Plenaria</h4>
             <p><em>"Del agua al calor de la Tierra: aplicaciones del método magnetotelúrico en la exploración de recursos profundos."</em></p>
           </div>
@@ -454,7 +467,7 @@
             <p class="modal-filiacion"><strong>Filiación:</strong> Universidad de la República (UdelaR)</p>
             <hr>
             <h4>Resumen Curricular</h4>
-            <p>Licenciada en Geología por la Universidad de la República (UdelaR, 1992) y Doctora en Ciencias Geológicas por la Universidad de Buenos Aires (UBA, 1998). Se desempeña como Profesora Agregada (Grado 4, Dedicación Total) del Instituto de Ciencias Geológicas (ICG) de la Facultad de Ciencias de la UdelaR y es Jefa del Departamento de Geodinámica Interna (2024-2026). Es responsable académica y directora del Observatorio Geofísico del Uruguay (OGU), desde donde coordina la red sismológica nacional y el monitoreo geomagnético del país. Su trayectoria investigadora se centra en la geología del basamento uruguayo, la geotectónica, el paleomagnetismo, la geofísica y la sismología, con énfasis en la evolución del Cinturón Dom Feliciano, del Terreno Piedra Alta y del Cratón del Río de la Plata. Ha publicado más de 90 trabajos científicos en revistas arbitradas, tanto internacionales como nacionales, y ha participado en numerosos proyectos financiados por la CSIC (Comisión Sectorial de Investigación Científica), la ANII (Agencia Nacional de Investigación e Innovación), el PEDECIBA y organismos internacionales. Es investigadora Grado 5 de PEDECIBA (Programa de Desarrollo de Ciencias Básicas)-Geociencias y Nivel II del Sistema Nacional de Investigadores (SNI). En 2026 recibió el Premio de Ciencias Básicas al Logro Científico “Dra. Ekaterina Scvortzoff”. En docencia, es responsable de cursos de grado y posgrado en Geotectónica, Geofísica, Tectónica del Uruguay y Cartografía Geológica y ha dirigido numerosas tesis de grado, maestría y doctorado. Ha integrado tribunales de concursos, comisiones asesoras y comités editoriales de revistas científicas. En gestión académica, fue Directora del ICG (2011-2013 y 2021-2023), integrante de la Comisión Directiva del ICG, de la Comisión de Dedicación Total y de diversas comisiones universitarias. Actualmente integra la Comisión de Horarios y la CCA de PEDECIBA-Geociencias. A nivel internacional, preside el Centro Regional de Sismología para América del Sur (CERESIS) desde 2018; es miembro del Comité SCAR, del Comité Ejecutivo de LatinMag y de la Comisión Sismológica de América Latina y el Caribe (LACSC). Ha sido par evaluadora de proyectos y becas en Argentina, Brasil, México, Paraguay, Panamá y Uruguay, y ha dictado conferencias y cursos en numerosos países. Su producción incluye artículos de divulgación, mapas geológicos, informes técnicos y entrevistas en medios, lo que consolida una sólida presencia en la comunicación pública de las geociencias.</p>
+            <p>Licenciada en Geología por la Universidad de la República (UdelaR, 1992)...</p>
             <h4>Conferencia Plenaria</h4>
             <p><em>"Diez años de sismología instrumental en Uruguay: monitorear para conocer y cuidar."</em></p>
           </div>
@@ -476,13 +489,40 @@
             <p class="modal-filiacion"><strong>Filiación:</strong> Universidad de Tecnología de Múnich (TUM)</p>
             <hr>
             <h4>Resumen Curricular</h4>
-            <p>Investigadora científica en el Instituto Alemán de Investigaciones Geodésicas (DGFI-TUM) de la Universidad de Tecnología de Múnich (TUM), Alemania. Es doctora en Geodesia por la Universidad Técnica de Dresde, Alemania. Sus principales áreas de investigación incluyen la unificación de sistemas de alturas, los sistemas globales de referencia vertical, los marcos de referencia regionales basados en GNSS y el monitoreo de la cinemática de la superficie terrestre, incluyendo desplazamientos verticales de la corteza y su influencia en la predicción del cambio del nivel del mar. Desde 2023, es presidenta del Sistema Global de Observación Geodésica (GGOS) de la Asociación Internacional de Geodesia (IAG), donde lidera la estrategia y coordinación internacional del sistema y representa a GGOS ante la comunidad científica, organismos internacionales y otros actores relacionados con la observación y el monitoreo del sistema Tierra. Durante su presidencia ha impulsado la implementación del Plan Estratégico de GGOS 2024–2034, el fortalecimiento de su gobernanza y de la coordinación entre los Servicios, Comisiones, Comités Intercomisión y Proyectos de la IAG, así como el desarrollo de las Variables Geodésicas Esenciales (EGV) como contribución de la geodesia a la observación de la Tierra. También ha promovido nuevas iniciativas en geodesia y clima espacial, inteligencia artificial y monitoreo de georiesgos, y ha fortalecido la colaboración de GGOS con las Naciones Unidas y su alcance regional e internacional, incluyendo iniciativas como GGOS África. Entre 2015 y 2023 lideró el área de GGOS «Sistema Unificado de Alturas», cuyo principal resultado fue el establecimiento del Sistema Internacional de Referencia de Alturas (IHRS) y su realización, el Marco Internacional de Referencia de Alturas (IHRF). Fue vicepresidenta de SIRGAS entre 2007 y 2015 y vicepresidenta de GGOS entre 2019 y 2023. Actualmente es coeditora en jefe de la serie de Simposios de la IAG en Springer. Está vinculada a la IAG desde 2000 y ha participado en los órganos de gobierno de diversos servicios, grupos de trabajo y grupos de estudio de la Asociación.</p>             
+            <p>Investigadora científica en el Instituto Alemán de Investigaciones Geodésicas (DGFI-TUM)...</p>
             <h4>Conferencia Plenaria</h4>
             <p><em>"Variables Geodésicas Esenciales (EGV): Contribución de la Geodesia a la Observación del Sistema Tierra."</em></p>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- ================================================================= -->
+    <!-- PLANTILLA: COPIAR Y PEGAR ESTE BLOQUE PARA AGREGAR NUEVA MODAL    -->
+    <!-- Asegurarse de mantener el ID coincidente con la tarjeta anterior   -->
+    <!-- 
+    <div id="modal-disertante-4" class="modal-disertante" onclick="cerrarModalAfuera(event, 'modal-disertante-4')">
+      <div class="modal-contenido">
+        <span class="btn-cerrar-modal" onclick="cerrarModal('modal-disertante-4')">&times;</span>
+        <div class="modal-body">
+          <div class="modal-img-container">
+            <img src="assets/img/disertantes/disertante4.jpg" alt="Foto Nombre Disertante" class="modal-img">
+          </div>
+          <div class="modal-info">
+            <h3>Título y Nombre</h3>
+            <p class="modal-titulo-prof">Cargo o Título Profesional</p>
+            <p class="modal-filiacion"><strong>Filiación:</strong> Institución / Universidad</p>
+            <hr>
+            <h4>Resumen Curricular</h4>
+            <p>Descripción del curriculum...</p>
+            <h4>Conferencia Plenaria</h4>
+            <p><em>"Título de la conferencia."</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <!-- ================================================================= -->
     
   </main>
 
@@ -521,27 +561,18 @@
     document.addEventListener('DOMContentLoaded', function () {
       const totalSlides = document.querySelectorAll('.swiper-disertantes .swiper-slide').length;
       const wrapper = document.getElementById('disertantes-wrapper');
-      const nextBtn = document.querySelector('.swiper-button-next');
-      const prevBtn = document.querySelector('.swiper-button-prev');
-      const pagination = document.querySelector('.swiper-pagination');
 
-      // Configuración adaptativa según la cantidad de ponentes disponibles
-      const esPocosDisertantes = totalSlides <= 2;
-
-      if (esPocosDisertantes) {
-        // Ajustes para 1 o 2 disertantes
-        if (wrapper) wrapper.classList.add('center-slides');
-        if (nextBtn) nextBtn.classList.add('hide-nav');
-        if (prevBtn) prevBtn.classList.add('hide-nav');
-        if (pagination) pagination.classList.add('hide-nav');
+      // Si hay 1 o 2 elementos, los centramos visualmente en el carrusel
+      if (totalSlides <= 2 && wrapper) {
+        wrapper.classList.add('center-slides');
       }
 
-      // Inicializar Swiper
+      // Inicializar Swiper con configuración dinámica según la cantidad total de slides
       const swiper = new Swiper('.swiper-disertantes', {
         slidesPerView: 1,
         spaceBetween: 20,
-        loop: !esPocosDisertantes, // Desactiva loop si hay pocos ponentes
-        autoplay: esPocosDisertantes ? false : {
+        loop: totalSlides > 3, // El loop infinito se activa solo si hay suficientes tarjetas para rotar
+        autoplay: {
           delay: 3500,
           disableOnInteraction: false,
           pauseOnMouseEnter: true
