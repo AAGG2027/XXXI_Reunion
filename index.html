@@ -353,7 +353,7 @@
               </div>
             </div>
           </div>
-
+        
           <!-- Slide Disertante 2 -->
           <div class="swiper-slide">
             <div class="card-disertante" onclick="abrirModal('modal-disertante-2')">
@@ -366,7 +366,20 @@
               </div>
             </div>
           </div>
-
+          
+          <!-- Slide Disertante 3 -->
+          <div class="swiper-slide">
+            <div class="card-disertante" onclick="abrirModal('modal-disertante-3')">
+              <div class="img-disertante-container">
+                <img src="assets/img/disertantes/disertante3.jpg" alt="PhD. Laura Sánchez">
+              </div>
+              <div class="info-disertante-card">
+                <h3>PhD. Laura Sánchez</h3>
+                <p class="filiacion">DGFI-TUM (Alemania)</p>
+              </div>
+            </div>
+          </div>
+          
         </div>
 
         <!-- Controles de navegación y paginación -->
@@ -448,7 +461,29 @@
         </div>
       </div>
     </div>
-
+    
+    <!-- Modal Disertante 3 -->
+    <div id="modal-disertante-3" class="modal-disertante" onclick="cerrarModalAfuera(event, 'modal-disertante-3')">
+      <div class="modal-contenido">
+        <span class="btn-cerrar-modal" onclick="cerrarModal('modal-disertante-3')">&times;</span>
+        <div class="modal-body">
+          <div class="modal-img-container">
+            <img src="assets/img/disertantes/disertante3.jpg" alt="Foto PhD. Laura Sánchez" class="modal-img">
+          </div>
+          <div class="modal-info">
+            <h3>PhD. Laura Sánchez</h3>
+            <p class="modal-titulo-prof">Investigadora del Instituto Alemán de Investigaciones Geodésicas (DGFI-TUM)</p>
+            <p class="modal-filiacion"><strong>Filiación:</strong> Universidad de Tecnología de Múnich (TUM)</p>
+            <hr>
+            <h4>Resumen Curricular</h4>
+            <p>Investigadora científica en el Instituto Alemán de Investigaciones Geodésicas (DGFI-TUM) de la Universidad de Tecnología de Múnich (TUM), Alemania. Es doctora en Geodesia por la Universidad Técnica de Dresde, Alemania. Sus principales áreas de investigación incluyen la unificación de sistemas de alturas, los sistemas globales de referencia vertical, los marcos de referencia regionales basados en GNSS y el monitoreo de la cinemática de la superficie terrestre, incluyendo desplazamientos verticales de la corteza y su influencia en la predicción del cambio del nivel del mar. Desde 2023, es presidenta del Sistema Global de Observación Geodésica (GGOS) de la Asociación Internacional de Geodesia (IAG), donde lidera la estrategia y coordinación internacional del sistema y representa a GGOS ante la comunidad científica, organismos internacionales y otros actores relacionados con la observación y el monitoreo del sistema Tierra. Durante su presidencia ha impulsado la implementación del Plan Estratégico de GGOS 2024–2034, el fortalecimiento de su gobernanza y de la coordinación entre los Servicios, Comisiones, Comités Intercomisión y Proyectos de la IAG, así como el desarrollo de las Variables Geodésicas Esenciales (EGV) como contribución de la geodesia a la observación de la Tierra. También ha promovido nuevas iniciativas en geodesia y clima espacial, inteligencia artificial y monitoreo de georiesgos, y ha fortalecido la colaboración de GGOS con las Naciones Unidas y su alcance regional e internacional, incluyendo iniciativas como GGOS África. Entre 2015 y 2023 lideró el área de GGOS «Sistema Unificado de Alturas», cuyo principal resultado fue el establecimiento del Sistema Internacional de Referencia de Alturas (IHRS) y su realización, el Marco Internacional de Referencia de Alturas (IHRF). Fue vicepresidenta de SIRGAS entre 2007 y 2015 y vicepresidenta de GGOS entre 2019 y 2023. Actualmente es coeditora en jefe de la serie de Simposios de la IAG en Springer. Está vinculada a la IAG desde 2000 y ha participado en los órganos de gobierno de diversos servicios, grupos de trabajo y grupos de estudio de la Asociación.</p>             
+            <h4>Conferencia Plenaria</h4>
+            <p><em>"Variables Geodésicas Esenciales (EGV): Contribución de la Geodesia a la Observación del Sistema Tierra."</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </main>
 
   <footer>
