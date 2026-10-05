@@ -387,7 +387,19 @@
               </div>
             </div>
           </div>
-
+          
+          <!-- Slide Disertante 5 -->
+          <div class="swiper-slide">
+            <div class="card-disertante" onclick="abrirModal('modal-disertante-5')">
+              <div class="img-disertante-container">
+                <img src="assets/img/disertantes/disertante5.jpg" alt="PhD. Santiago G. Solazzi">
+              </div>
+              <div class="info-disertante-card">
+                <h3>PhD. Mauricio D. Sacchi</h3>
+                <p class="filiacion">PHYS-UofA (Canadá)</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Controles de navegación y paginación -->
@@ -421,6 +433,7 @@
         <a href="https://ingeosur-conicet.gob.ar/" target="_blank"><img src="assets/img/ausp18.png" alt="Auspiciante 18"></a>
         <a href="https://www.hidro.gov.ar/" target="_blank"><img src="assets/img/ausp19.png" alt="Auspiciante 19"></a>
         <a href="https://cigeof.fcaglp.unlp.edu.ar/" target="_blank"><img src="assets/img/ausp20.png" alt="Auspiciante 20"></a>
+        <a href="https://www.ign.gob.ar/AreaInstitucional/Organismos/CNUGGI" target="_blank"><img src="assets/img/ausp21.jpg" alt="Auspiciante 21"></a>
       </div>
     </section>
 
@@ -513,7 +526,28 @@
         </div>
       </div>
     </div>    
-    
+
+    <!-- Modal Disertante 5 -->
+    <div id="modal-disertante-5" class="modal-disertante" onclick="cerrarModalAfuera(event, 'modal-disertante-5')">
+      <div class="modal-contenido">
+        <span class="btn-cerrar-modal" onclick="cerrarModal('modal-disertante-5')">&times;</span>
+        <div class="modal-body">
+          <div class="modal-img-container">
+            <img src="assets/img/disertantes/disertante4.jpg" alt="Foto PhD. Mauricio D. Sacchi" class="modal-img">
+          </div>
+          <div class="modal-info">
+            <h3>PhD. Mauricio D. Sacchi </h3>
+            <p class="modal-titulo-prof">Profesor y director del Signal Analysis and Imaging Group (SAIG).</p>
+            <p class="modal-filiacion"><strong>Filiación:</strong> Departamento de Física de la University of Alberta (PHYS-UofA)</p>
+            <hr>
+            <h4>Resumen Curricular</h4>
+            <p>Es profesor del Departamento de Física de la University of Alberta, Canadá, y director del Signal Analysis and Imaging Group (SAIG). Se graduó en Geofísica en la Universidad Nacional de La Plata (UNLP) en 1988 y obtuvo su doctorado en Geofísica en la University of British Columbia en 1996. Se incorporó a la University of Alberta en 1997, donde fue jefe del Departamento de Física entre 2010 y 2015 y nuevamente entre 2016 y 2021. Su investigación se centra en problemas inversos, procesamiento de señales e imágenes geofísicas, migración sísmica, inversión de forma de onda completa, métodos de rango reducido, reconstrucción y deblending de datos sísmicos, adquisición compresiva y aplicaciones de aprendizaje automático en geofísica. Ha desempeñado diversos cargos de liderazgo en la comunidad geofísica internacional. Fue Editor-in-Chief de GEOPHYSICS entre 2016 y 2018 y Second Vice President de la Society of Exploration Geophysicists (SEG) durante 2023–2024. Entre sus distinciones se encuentran la CSEG Medal, recibida en 2012; su participación como SEG Honorary Lecturer en 2014 y CSEG Distinguished Lecturer en 2016; y la SEG Kauffman Gold Medal, otorgada en 2019</p>
+            <h4>Conferencia Plenaria</h4>
+            <p><em>"Inversión sísmica elástica: avances recientes y desafíos actuales."</em></p>
+          </div>
+        </div>
+      </div>
+    </div>        
   </main>
 
   <footer>
